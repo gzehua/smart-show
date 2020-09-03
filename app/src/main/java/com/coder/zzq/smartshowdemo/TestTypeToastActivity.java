@@ -8,7 +8,7 @@ import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.coder.zzq.smartshow.dialog.ClickListAdapter;
+import com.coder.zzq.smartshow.dialog.list.ClickListAdapter;
 import com.coder.zzq.smartshow.toast.SmartToast;
 
 import java.util.Arrays;
@@ -23,18 +23,7 @@ public class TestTypeToastActivity extends AppCompatActivity {
         mListView = findViewById(R.id.list_view);
         ClickListAdapter adapter = new ClickListAdapter();
         adapter.setItemCenter(true);
-        adapter.setItems(Arrays.asList(
-                new String[]{
-                        "info",
-                        "warning",
-                        "success",
-                        "error",
-                        "fail",
-                        "complete",
-                        "forbid",
-                        "waiting"
-                }
-        ));
+        adapter.setItems(Arrays.asList("info", "warning", "success", "error", "fail", "complete", "forbid", "waiting"));
         mListView.setAdapter(adapter);
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

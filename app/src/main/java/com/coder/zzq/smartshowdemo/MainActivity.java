@@ -8,7 +8,7 @@ import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.coder.zzq.smartshow.dialog.ClickListAdapter;
+import com.coder.zzq.smartshow.dialog.list.ClickListAdapter;
 
 import java.util.Arrays;
 
@@ -23,13 +23,11 @@ public class MainActivity extends AppCompatActivity {
         ClickListAdapter adapter = new ClickListAdapter();
         adapter.setItemCenter(true);
         adapter.setItems(Arrays.asList(
-                new String[]{
-                        "toast",
-                        "type toast",
-                        "snackbar",
-                        "topbar",
-                        "dialog"
-                }
+                "toast",
+                "type toast",
+                "snackbar",
+                "topbar",
+                "dialog"
         ));
         mListView.setAdapter(adapter);
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

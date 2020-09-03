@@ -8,7 +8,7 @@ import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.coder.zzq.smartshow.dialog.ClickListAdapter;
+import com.coder.zzq.smartshow.dialog.list.ClickListAdapter;
 import com.coder.zzq.smartshow.toast.SmartToast;
 import com.coder.zzq.smartshow.topbar.SmartTopbar;
 

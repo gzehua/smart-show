@@ -9,7 +9,7 @@ import android.widget.ListView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.coder.zzq.smartshow.dialog.ClickListAdapter;
+import com.coder.zzq.smartshow.dialog.list.ClickListAdapter;
 import com.coder.zzq.smartshow.snackbar.SmartSnackbar;
 import com.coder.zzq.smartshow.toast.SmartToast;
 
@@ -26,13 +26,7 @@ public class TestSnackbarActivity extends AppCompatActivity {
         mListView = findViewById(R.id.list_view);
         ClickListAdapter adapter = new ClickListAdapter();
         adapter.setItemCenter(true);
-        adapter.setItems(Arrays.asList(
-                new String[]{
-                        "short snackbar",
-                        "long snackbar",
-                        "indefinite snackbar"
-                }
-        ));
+        adapter.setItems(Arrays.asList("short snackbar", "long snackbar", "indefinite snackbar"));
         mListView.setAdapter(adapter);
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

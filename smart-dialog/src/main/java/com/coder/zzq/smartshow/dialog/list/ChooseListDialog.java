@@ -76,7 +76,7 @@ public class ChooseListDialog extends SmartDialog<ChooseListDialogProvider> {
         return this;
     }
 
-    public ChooseListDialog defaultChosenItems(int[] defaultChosenItems) {
+    public ChooseListDialog defaultChosenItems(int... defaultChosenItems) {
         mDialogProvider.getBuildParams().defaultChosenItems(defaultChosenItems);
         return this;
     }
