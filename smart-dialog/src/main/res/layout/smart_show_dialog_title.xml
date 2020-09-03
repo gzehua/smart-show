@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@id/smart_show_dialog_message_view"
+    android:id="@id/smart_show_dialog_title_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_gravity="center"
     android:gravity="center"
-    android:minHeight="60dp"
+    android:paddingTop="16dp"
     android:textColor="#323232"
-    android:textSize="15sp">
-
-</TextView>
+    android:textSize="18sp" />

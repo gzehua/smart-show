@@ -16,23 +16,26 @@
             android:layout_centerInParent="true"
             android:layout_gravity="center"
             android:background="@drawable/smart_show_round_edt_bg"
+            android:cursorVisible="true"
             android:gravity="center"
             android:lineSpacingExtra="2dp"
             android:lines="1"
+            android:maxLength="10"
             android:padding="4dp"
             android:singleLine="true"
             android:textColor="#333333"
             android:textColorHint="@color/default_edt_hint_color"
-            android:textSize="15sp"
-            android:cursorVisible="true"
-            android:textCursorDrawable="@drawable/smart_show_edt_cursor_drawable"/>
+            android:textCursorDrawable="@drawable/smart_show_edt_cursor_drawable"
+            android:textSize="15sp" />
 
         <LinearLayout
+            android:id="@+id/smart_show_input_number_unit_part"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_toRightOf="@id/smart_show_input_edt"
             android:orientation="horizontal"
-            android:paddingLeft="10dp">
+            android:paddingLeft="10dp"
+            android:visibility="gone">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -44,20 +47,20 @@
 
             <TextView
                 android:id="@+id/smart_show_num_unit"
-                android:textColor="@color/default_text_color"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:gravity="center"
                 android:ellipsize="end"
-                android:maxLines="2"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/default_text_color"
                 android:textSize="13sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:textColor="@color/default_text_color"
                 android:gravity="center"
                 android:text=")"
+                android:textColor="@color/default_text_color"
                 android:textSize="13sp" />
 
         </LinearLayout>
@@ -65,11 +68,11 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:visibility="gone"
         android:id="@+id/smart_show_error_tip_line"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="gone">
 
         <View
             android:layout_width="match_parent"
@@ -81,9 +84,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:padding="4dp"
-            android:maxLines="3"
             android:ellipsize="end"
+            android:maxLines="3"
+            android:padding="4dp"
             android:text="错误："
             android:textColor="#ff0000"
             android:textSize="11sp" />
