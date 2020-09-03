@@ -58,6 +58,14 @@ public class InputNumberDialogProvider extends DelegateScaffoldDialog<InputNumbe
     }
 
     @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            Utils.hideKeyboard(mViewHolder.getRootView().toView());
+        }
+    }
+
+    @Override
     public void onResetDialogWhenShowAgain() {
         super.onResetDialogWhenShowAgain();
         mViewHolder.setVisibility(R.id.smart_show_error_tip_line, View.GONE);

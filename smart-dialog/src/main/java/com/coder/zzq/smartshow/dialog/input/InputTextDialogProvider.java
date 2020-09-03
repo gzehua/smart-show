@@ -36,6 +36,14 @@ public class InputTextDialogProvider extends DelegateScaffoldDialog<InputTextDia
     }
 
     @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            Utils.hideKeyboard(mViewHolder.getRootView().toView());
+        }
+    }
+
+    @Override
     protected HeaderDelegate createHeaderDelegate() {
         return new TitleDelegate(this);
     }
