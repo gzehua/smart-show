@@ -1,1 +1,4 @@
+include ':smart-dialog-demo'
+include ':annotation-compiler'
+include ':annotations'
 include ':app', ':smart-toast', ':smart-dialog', ':smart-snackbar', ':smart-topbar', ':core', ':bar-core', ':all'
