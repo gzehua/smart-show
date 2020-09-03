@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TestChooseListDialogActivity">
+
+    <include layout="@layout/copyright_toolbar" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择模式"/>
+    <RadioGroup
+        android:id="@+id/choice_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/radio_button_single_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单选" />
+
+        <RadioButton
+            android:id="@+id/radio_button_multiple_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="多选" />
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mark 类型"/>
+    <RadioGroup
+        android:id="@+id/check_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/radio_button_circle_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="圆形" />
+
+        <RadioButton
+            android:id="@+id/radio_button_cube_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="方框" />
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mark 位置"/>
+    <RadioGroup
+        android:id="@+id/check_mark_pos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/radio_button_mark_pos_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="左边" />
+
+        <RadioButton
+            android:id="@+id/radio_button_mark_pos_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="右边" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show"
+        android:onClick="onShowClicked"/>
+</LinearLayout>

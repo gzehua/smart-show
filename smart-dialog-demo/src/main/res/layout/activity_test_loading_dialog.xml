@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TestLoadingDialogActivity">
+
+    <include layout="@layout/copyright_toolbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="box size" />
+
+    <RadioGroup
+        android:id="@+id/box_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_button_large_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="large" />
+
+        <RadioButton
+            android:id="@+id/radio_button_middle_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="middle" />
+
+        <RadioButton
+            android:id="@+id/radio_button_small_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="small" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkbox_with_msg"
+        android:checked="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="with label" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onShowClicked"
+        android:text="show" />
+</LinearLayout>
