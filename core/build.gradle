@@ -8,7 +8,7 @@ android {
 
 
     defaultConfig {
-        minSdkVersion 15
+        minSdkVersion 17
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -27,6 +27,7 @@ android {
 }
 
 dependencies {
-    compileOnly 'androidx.appcompat:appcompat:1.0.2'
+    api project(path: ':annotations')
+    compileOnly 'androidx.appcompat:appcompat:1.2.0'
     api 'com.github.the-pig-of-jungle:toolkit:1.0.5'
 }

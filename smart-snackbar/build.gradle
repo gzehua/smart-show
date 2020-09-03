@@ -6,9 +6,8 @@ android {
     compileSdkVersion 28
 
 
-
     defaultConfig {
-        minSdkVersion 15
+        minSdkVersion 17
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -29,6 +28,6 @@ android {
 dependencies {
     api project(':core')
     api project(':bar-core')
-    compileOnly 'androidx.appcompat:appcompat:1.0.2'
-    compileOnly 'com.google.android.material:material:1.1.0-alpha09'
+    compileOnly 'androidx.appcompat:appcompat:1.2.0'
+    compileOnly 'com.google.android.material:material:1.2.1'
 }

@@ -8,7 +8,7 @@ android {
 
 
     defaultConfig {
-        minSdkVersion 15
+        minSdkVersion 17
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -28,5 +28,5 @@ android {
 
 dependencies {
     api project(':core')
-    compileOnly 'androidx.appcompat:appcompat:1.0.2'
+    compileOnly 'androidx.appcompat:appcompat:1.2.0'
 }
